@@ -56,7 +56,7 @@ gContent.append("g")
   .attr("r", 2.5);
 
 gContent.append("g")
-  .attr("font-family", "sans-serif")
+  .attr("font-family", "-apple-system, sans-serif")
   .attr("font-size", 10)
   .attr("stroke-linejoin", "round")
   .attr("stroke-width", 3)
