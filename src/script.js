@@ -75,17 +75,17 @@ gContent.append("g")
   .clone(true).lower()
   .attr("stroke", "white");
 
-const debugContent = () => {
+const autoBox = () => {
   const contentBox = gContent.node().getBBox();
-  gContent.append('rect')
-    .attr('width', contentBox.width)
-    .attr('height', contentBox.height)
-    .attr('x', contentBox.x)
-    .attr('y', contentBox.y)
-    .style('fill', 'transparent')
-    .style('stroke', '#757575');
+  // gContent.append('rect')
+  //   .attr('width', contentBox.width)
+  //   .attr('height', contentBox.height)
+  //   .attr('x', contentBox.x)
+  //   .attr('y', contentBox.y)
+  //   .style('fill', 'transparent')
+  //   .style('stroke', '#757575');
   const { x, y, width, height } = contentBox;
   return [x, y, width, height];
 }
 
-svg.attr("viewBox", debugContent).node();
+svg.attr("viewBox", autoBox).node();
