@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: -apple-system, sans-serif;
+  margin: 0;
+}
+
+.app {
+  height: 100%;
+  border: 3px dashed blue;
+}
+
+.svg {
+  display: block;
+}
