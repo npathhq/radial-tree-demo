@@ -1,6 +1,13 @@
 {
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel src/index.html -d dist/development/ --open"
+  },
+  "dependencies": {
+    "d3": "latest"
+  },
+  "devDependencies": {
+    "parcel-bundler": "latest",
+    "sass": "latest"
   }
 }
